@@ -15,7 +15,7 @@ public class BinaryHeap{
 		data[size++] = ele;
 		int child = size-1;
 		int parent = (child - 1) / 2;
-		while((data[parent] > data[child]) && parent >= 0){  //constantly
+		while((data[parent] > data[child]) && parent >= 0){  
 			swap(data, parent, child);
 			child = parent;
 			parent = (child-1)/2;
